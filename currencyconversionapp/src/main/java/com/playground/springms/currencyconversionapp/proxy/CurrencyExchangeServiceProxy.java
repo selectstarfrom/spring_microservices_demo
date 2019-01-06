@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import com.playground.springms.currencyconversionapp.beans.CurrencyConversionBean;
 
 //@FeignClient(name = "forex-service", url = "localhost:8000/forexapp")
+//@FeignClient(name="forexapp/forex-service")
+//@RibbonClient(name="forexapp/forex-service")
 @FeignClient(name="forex-service")
 @RibbonClient(name="forex-service")
 public interface CurrencyExchangeServiceProxy {
